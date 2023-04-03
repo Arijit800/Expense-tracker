@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.PNG" class="logo">
+            <ul id="menu">
+                <li><b><a href="">HOME</a></b></li>
+                <li><b><a href="">ABOUT</a></b></li>
+                <li><b><a href="expense.html">SERVICES</a></b></li>
+                <li><b><a href="team.html">CONTACT US</a></b></li>
+                <li><b><a href="feedback.html">FEEDBACK</a></b></li>
+                <li>
+                    <a href="register.html"><img src="images/user-solid.svg" height="25px" width="25px"></a>
+                </li>
+            </ul>
+
+        </nav>
+    </div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quidem optio molestiae, labore voluptates repellat similique, ad ex atque obcaecati laudantium minima dolore quas natus delectus quod. Aspernatur, natus deleniti.
+    </p>
+
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro saepe commodi, a quia tempora sunt iste quisquam. Veniam veritatis quidem suscipit architecto, nemo nostrum reiciendis ut at cupiditate inventore, qui eaque aspernatur? Corrupti,
+        vel? Ullam sit magnam nemo quos? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime nam repellat minima quod, quisquam, nemo eligendi aperiam facilis vitae ut eaque eum impedit dolorum dolore cupiditate sit debitis culpa rerum reprehenderit
+        voluptatum, quae laboriosam magnam. Obcaecati, repudiandae? Vel, doloremque consequuntur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio voluptatibus libero quos corporis, ab porro optio amet ipsa cum ex eius qui vitae distinctio
+        reiciendis blanditiis doloremque. Reprehenderit, ullam ipsa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, itaque deleniti fugiat tempore fuga exercitationem labore provident. Sed dicta iure velit voluptates debitis dolorum,
+        est consequuntur. Voluptas voluptatibus, veniam aliquid explicabo dolorum nisi ab modi nihil dolorem nobis nemo minima distinctio eos optio praesentium unde numquam recusandae dicta perspiciatis odit? Sequi cum nisi alias accusantium at sunt,
+        ad quo recusandae consequuntur fugiat excepturi temporibus veritatis neque ducimus quaerat? Perferendis minima ipsum repellendus enim saepe molestias!
+    </p>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+
+        window.onscroll = function() {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

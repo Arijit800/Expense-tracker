@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="team.css">
+    <title>Our Team</title>
+
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>OUR TEAM</h1>
+    </div>
+
+    <section>
+
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/7.jpg" alt="">
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">SHAYAK KARAN</span>
+                            <span class="profession">TEAM LEAD</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/5.jpeg" alt="">
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">PRIYANGANA PANDIT</span>
+                            <span class="profession">BACKEND DEV</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/4.jpeg" alt="">
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">RIDDHIKA MANDAL</span>
+                            <span class="profession">BACKEND DEV</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/2.jpeg" alt="">
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">ARIJIT CHOWDHURY</span>
+                            <span class="profession">FRONTEND DEV</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/3.jpeg" alt="">
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">ARITRAA BARAT</span>
+                            <span class="profession">DATABASE </span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="images/6.jpeg" alt="">
+                        </div>
+
+                        <div class="media-icons">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+
+                        <div class="name-profession">
+                            <span class="name">NABARUPA GHOSH</span>
+                            <span class="profession">FRONTEND DEV</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About Me</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

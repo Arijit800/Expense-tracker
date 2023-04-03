@@ -1,0 +1,119 @@
+* {
+    /* applies to all html elements*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    /* background pic */
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/coins.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box {
+    /* Outer Box */
+    width: 90%;
+    max-width: 420px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+    border-radius: 25px;
+    border-style: solid;
+}
+
+.form-box h1 {
+    /* Login Heading */
+    font-size: 35px;
+    margin-bottom: 60px;
+    position: relative;
+    color: #0e1bd6;
+}
+
+.form-box h1::after {
+    /* Underline of Login Heading */
+    content: '';
+    width: 35px;
+    height: 4px;
+    border-radius: 3px;
+    background: #0e1bd6;
+    bottom: -12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field {
+    /* input fields (Name , Email , Password) */
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    /* icons beside the input fields */
+    margin-left: 15px;
+    color: #999;
+}
+
+form p {
+    /* forgot password text */
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    /* Click Here */
+    text-decoration: none;
+    color: #3c00a0;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button {
+    flex-basis: 50%;
+    background: #0e1bd6;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.input-group {
+    /* space between buttons and 'forgot password' text */
+    height: 275px;
+}
+
+.btn-field button.disable {
+    background: #eaeaea;
+    color: #555;
+}
